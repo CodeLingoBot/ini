@@ -141,7 +141,7 @@ func (f *File) Section(name string) *Section {
 	return sec
 }
 
-// Section returns list of Section.
+// Sections: Section returns list of Section.
 func (f *File) Sections() []*Section {
 	if f.BlockMode {
 		f.lock.RLock()
